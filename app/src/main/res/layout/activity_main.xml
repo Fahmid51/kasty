@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- SurfaceView fills entire screen for PC mirror display -->
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <!-- Info card shown when not yet connected -->
+    <LinearLayout
+        android:id="@+id/cardInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#0a0c10"
+        android:padding="28dp">
+
+        <!-- Signal icon (animated) -->
+        <TextView
+            android:id="@+id/ivSignal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📵"
+            android:textSize="64sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- App name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PortableCast"
+            android:textSize="34sp"
+            android:textColor="#00e5ff"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wireless Portable Monitor"
+            android:textSize="13sp"
+            android:textColor="#37474f"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ready"
+            android:textSize="22sp"
+            android:textColor="#eceff1"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap the button to start broadcasting"
+            android:textSize="13sp"
+            android:textColor="#546e7a"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Device name info -->
+        <TextView
+            android:id="@+id/tvDevName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="11sp"
+            android:textColor="#1565C0"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="36dp"/>
+
+        <!-- Start button -->
+        <Button
+            android:id="@+id/btnToggle"
+            android:layout_width="240dp"
+            android:layout_height="56dp"
+            android:text="📡  Start Broadcasting"
+            android:backgroundTint="#1565C0"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:stateListAnimator="@null"
+            android:layout_marginBottom="40dp"/>
+
+        <!-- How to use -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#111520"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOW TO CONNECT FROM WINDOWS"
+                android:textSize="9sp"
+                android:textColor="#37474f"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.1"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.  Tap Start Broadcasting below"
+                android:textSize="12sp"
+                android:textColor="#455a64"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.  On PC press  Win + K"
+                android:textSize="12sp"
+                android:textColor="#455a64"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.  Click your phone's name in the list"
+                android:textSize="12sp"
+                android:textColor="#455a64"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.  Your PC screen appears here! 🎉"
+                android:textSize="12sp"
+                android:textColor="#00e676"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
