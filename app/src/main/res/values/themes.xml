@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PortableCast" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">#00e5ff</item>
+        <item name="colorPrimaryDark">#0097a7</item>
+        <item name="colorAccent">#00e5ff</item>
+        <item name="android:windowBackground">#0a0c10</item>
+    </style>
+</resources>
