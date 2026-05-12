@@ -5,21 +5,19 @@ plugins {
 
 android {
     namespace 'com.phonecast.miracast'
-    compileSdk 34
+    compileSdk 33
 
     defaultConfig {
-        applicationId  "com.phonecast.miracast"
-        minSdk         28          // Android 9+ required for Miracast P2P APIs
-        targetSdk      34
-        versionCode    1
-        versionName    "1.0"
+        applicationId "com.phonecast.miracast"
+        minSdk 28
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
     }
 
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),
-                          'proguard-rules.pro'
         }
     }
 
