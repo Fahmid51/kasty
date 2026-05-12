@@ -5,6 +5,7 @@ import android.content.*
 import android.media.MediaCodec
 import android.media.MediaFormat
 import android.net.wifi.p2p.*
+import android.net.wifi.p2p.nsd.WifiP2pDnsSdServiceInfo
 import android.net.wifi.p2p.WifiP2pManager.*
 import android.os.*
 import android.util.Log
