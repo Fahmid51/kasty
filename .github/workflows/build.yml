@@ -22,15 +22,11 @@ jobs:
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Install Gradle
-        uses: gradle/gradle-build-action@v3
-        with:
-          gradle-version: '8.0'
+      - name: List files for debug
+        run: ls -la
 
-      - name: Generate Gradle Wrapper
-        run: |
-          gradle wrapper --gradle-version=8.0
-          chmod +x gradlew
+      - name: Make gradlew executable
+        run: chmod +x gradlew
 
       - name: Build Debug APK
         run: ./gradlew assembleDebug --stacktrace
